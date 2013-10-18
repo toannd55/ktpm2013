@@ -8,8 +8,6 @@ import re
 
 doc = input.main.__doc__
 
-print doc
-
 i=0
 array = [] #luu cac gia tri kiem thu bien
 arr = [] #luu cac bien de kiem tra lop tuong duong
@@ -74,12 +72,15 @@ for arr2 in arr:
 
 #kiem tra lop tuong duong
 for arr2 in arr:
-    for ix in xrange(1, len(arr2)-1):
+    for ix in xrange(0, len(arr2)-1):
         if ix%2==1:
             if arr2[ix] >= arr2[ix+1]:
                 check = False
                 break
-
+        if ix%2==0:
+            if arr2[ix] >= arr2[ix+1]:
+                check = False
+                break
 
 class autoTest(unittest.TestCase):
     def __init__(self, *args):
