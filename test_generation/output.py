@@ -53,7 +53,7 @@ try:
             arr.append([])
             count += 1
         i += 1
-    print array
+
     #Sap xep theo dau mut trai cua tung khoang de kiem tra t/m lop tuong duong k?    
     for arr2 in arr:
         for ix in xrange(0, len(arr2)):
